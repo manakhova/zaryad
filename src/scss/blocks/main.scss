@@ -1,0 +1,45 @@
+.main {
+  position: relative;
+  
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    left: 291px;
+    top: 181px;
+    width: 674px;
+    height: 634px;
+    background: radial-gradient(50% 50% at 50% 50%, $orange 0%, rgba(246, 79, 0, 0) 100%);
+    filter: blur(32px);
+  }
+
+  &::after {
+    left: 857px;
+    top: 108px;
+    width: 878px;
+    height: 645px;
+    background: radial-gradient(50% 50% at 50% 50%, $blue 0%, rgba(1, 120, 243, 0) 100%);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    max-width: 1218px;
+    margin: 0 auto;
+  }
+
+  &__slider {
+    padding-bottom: 130px;
+  }
+
+  &__choise {
+    background-color: $xl-gray;
+    padding: 100px 0 290px;
+
+    h2 {
+      color: $l-black;
+      margin-bottom: 43px;
+    }
+  }
+}

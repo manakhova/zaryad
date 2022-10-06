@@ -1,0 +1,118 @@
+.choise {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("/public/img/svg/line-1.svg");
+    background-repeat: repeat-x;
+    background-position-y: 50%;
+    bottom: 80px;
+    left: -5px;
+    width: 105%;
+    height: 60px;
+    border-top: 1px solid $l-black;
+    border-bottom: 1px solid $l-black;
+    transform: rotate(-2.51deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("/public/img/svg/line-2.svg");
+    background-repeat: repeat-x;
+    background-position-y: 50%;
+    background-color: $blue;
+    bottom: 70px;
+    left: -8px;
+    width: 103%;
+    height: 60px;
+    transform: rotate(5.09deg);
+  }
+
+  .swiper {
+    max-width: 1218px;
+    color: $l-black;
+  }
+
+  &__item {
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      cursor: pointer;
+      min-width: 64px;
+      min-height: 50px;
+      background-color: transparent;
+      padding: 13px 20px;
+      border: 1px solid $m-gray;
+      border-radius: 30px 0 0 30px;
+      transition: 0.3s; 
+
+        svg {
+          fill: transparent;
+          stroke: $l-black;
+        }
+
+        &:hover {
+          border-color: $l-black;
+          transition: 0.3s;
+        }
+    }
+  }
+
+  &__more {
+    position: relative;
+    font-weight: 600;
+    color: inherit;
+    min-width: 207px;
+    padding: 15px 50px 15px 24px;
+    border: 1px solid $l-black;
+    border-radius: 0 30px 30px 0;
+    transition: 0.3s;
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 25px;
+      top: 15px;
+      width: 10px;
+      height: 6px;
+      font-size: 16px;
+      background-repeat: no-repeat;
+      content: url('/public/img/svg/arr-dark.svg');
+    }
+
+    &:hover {
+      color: $orange;
+      border-color: $orange;
+      transition: 0.3s;
+
+      &::after {
+      content: url('/public/img/svg/arr-orange.svg');
+      }
+    }
+  }
+}

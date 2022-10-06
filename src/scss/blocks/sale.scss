@@ -1,0 +1,163 @@
+.sale {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 100px;
+    right: -50px;
+    width: 655px;
+    height: 655px;
+    background-image: url('/public/img/photo/1-b.png');
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 60px;
+    right: -88px;
+    width: 736px;
+    height: 736px;
+    border: 1px solid $l-black;
+    border-radius: 50%;
+  }
+  
+  &__container {
+    max-width: 1218px;
+    padding: 117px 0;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 104px;
+    color: transparent;
+    margin-bottom: 40px;
+
+    span {
+      -webkit-text-stroke: 1px $m-gray;
+
+      &:first-of-type,
+      &:last-of-type {
+        display: block;
+      }
+
+      &:first-of-type {
+        position: relative;
+        
+        &::before {
+          position: absolute;
+          content: "";
+          top: 8px;
+          left: 315px;
+          width: 100px;
+          height: 100px;
+          background: radial-gradient(50% 50% at 50% 50%, $blue 0%, rgba(1, 120, 243, 0) 100%);
+          opacity: 0.6;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 23px;
+          left: 338px;
+          width: 45px;
+          height: 63px;
+          background-image: url("/public/img/svg/lightning.svg");
+          background-repeat: no-repeat;
+        }
+      }
+
+      &:nth-of-type(2) {
+        position: relative;
+        padding-left: 76px;
+        
+        &::before {
+          position: absolute;
+          content: "";
+          top: 8px;
+          left: -15px;
+          width: 100px;
+          height: 100px;
+          background: radial-gradient(50% 50% at 50% 50%, $orange 0%, rgba(1, 120, 243, 0) 100%);
+          opacity: 0.6;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 28px;
+          left: 5px;
+          width: 60px;
+          height: 63px;
+          background-image: url("/public/img/svg/sale.svg");
+          background-repeat: no-repeat;
+        }
+      }
+
+      &:nth-of-type(3) {
+        color: $xl-gray;
+        -webkit-text-stroke: 0px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 24px;
+    color: $m-gray;
+    max-width: 490px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    max-width: 425px;
+  }
+
+  &__form-input {
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    background-color: transparent;
+    color: $l-gray;
+    padding: 15px 0;
+    border-bottom: 1px solid $d-gray;
+    transition: 0.3s;
+
+    &::placeholder {
+      font: inherit;
+      font-weight: 400;
+      color: $d-gray;
+    }
+
+    &:hover {
+      border-color: $m-gray;
+      transition: 0.3s;
+    }
+
+    &:focus {
+      border-color: $l-gray;
+      transition: 0.3s;
+    }
+  }
+
+  &__form-btn {
+    cursor: pointer;
+    width: 150px;
+    min-height: 150px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $l-gray;
+      transition: 0.3s;
+    }
+  }
+}

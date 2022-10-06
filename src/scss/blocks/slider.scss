@@ -1,0 +1,49 @@
+.slider {
+    .swiper {
+      position: relative;
+      z-index: 1;
+    }
+
+  &__list {
+      display: flex;
+      align-items: flex-end;
+  }
+  .swiper-slide {
+    img {
+      display: block;
+      width: 990px;
+      height: 100%;
+      border-radius: 100px 0 100px 0;
+      object-fit: contain;
+      transition: 0.3s;
+    }
+
+    &-next, &-prev {
+      img {
+        width: 830px;
+        height: 510px;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    position: absolute;
+    top: 120px;
+    right: 390px;
+    width: 150px;
+    min-height: 150px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transform: rotate(15deg);
+    transition: 0.3s;
+    z-index: 15;
+
+    &:hover {
+      background-color: $l-gray;
+      transition: 0.3s;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.swiper {
+   padding-top: 100px !important;
+   top: -100px;
+
+  .swiper-button-next {
+    width: 78px;
+    height: 58px;
+    border: 1px solid $m-gray;
+    border-radius: 0 30px 30px 0;
+
+    &.choise__btn {
+      top: 30px;
+    }
+
+    &.slider__btn {
+      right: 300px;
+    }
+
+    &::after {
+      font-size: 16px;
+      background-repeat: no-repeat;
+      content: url('/public/img/svg/arr.svg');
+    }
+  } 
+
+  .swiper-button-prev {
+    width: 78px;
+    height: 58px;
+    border: 1px solid $m-gray;
+    border-radius: 30px 0 0 30px;
+
+    &.choise__btn {
+      top: 30px;
+      left: 1054px;
+    }
+
+    &.slider__btn {
+      left: 300px;
+    }
+
+    &::after {
+      font-size: 16px;
+      background-repeat: no-repeat;
+      content: url('/public/img/svg/arr.svg');
+      transform: rotate(180deg);
+    }
+   }
+}
