@@ -19,8 +19,8 @@
         <fieldset class="header__language">
           <input class="visually-hidden" type="radio" name="language" id="ru" checked>
           <label class="header__language-option" for="ru">Ru</label>
-          <input class="visually-hidden" type="radio" name="language" id="eng">
-          <label class="header__language-option" for="eng">Eng</label>
+          <input class="visually-hidden" type="radio" name="language" id="en">
+          <label class="header__language-option" for="en">En</label>
         </fieldset>
         <ul class="header__nav">
           <li class="header__item">
@@ -89,6 +89,15 @@
           <ul class="slider__list swiper-wrapper">
             <li class="slider__item swiper-slide">
               <img width="1103px" height="692px" src="./img/photo/1.png" alt="Hockey player">
+              <div class="slider__info">
+                <span>Константин Константинович</span>
+                <span>Крутой хоккеист такой-то&nbsp;команды</span>
+                <button>
+                  <svg width="24" height="24">
+                    <use xlink:href="#play"></use>
+                  </svg>
+                </button>
+              </div>
             </li>
             <li class="slider__item swiper-slide">
               <img width="1103px" height="692px" src="./img/photo/2.png" alt="Hockey player">
@@ -96,16 +105,13 @@
             <li class="slider__item swiper-slide">
               <img width="1103px" height="692px" src="./img/photo/1.png" alt="Hockey player">
             </li>
-            <li class="slider__item swiper-slide">
-              <img width="1103px" height="692px" src="./img/photo/2.png" alt="Hockey player">
-            </li>
           </ul>
           <div class="slider__btn slider__btn--next swiper-button-next"></div>
           <div class="slider__btn slider__btn--prev swiper-button-prev"></div>
         </div>
         <button class="slider__button" type="button">В каталог</button>
       </section>
-      <section class="main__choise choise">
+      <section class="main__choise choise line-anim">
         <h2 class="main__title choise__title">Выбор наших клиентов</h2>
         <div class="swiper">
           <ul class="choise__list swiper-wrapper">
@@ -204,7 +210,7 @@
               высококачественных хоккейных клюшек для всех возрастных
               категорий и уровней игры
             </p>
-            <a class="about__link" href="#">Подробнее о компании</a>
+            <a class="about__link" href="#">Подробнее о&nbsp;компании</a>
           </div>
           <ul class="about__info">
             <li class="about__info-item">
@@ -252,7 +258,7 @@
         <div class="footer__info">
           <div class="footer__social">
             <a class="footer__link" href="#">
-              <svg width="260" height="27">
+              <svg width="268" height="28">
                 <use xlink:href="#logo-footer"></use>
               </svg>
             </a>
@@ -262,7 +268,7 @@
               </svg>
             </a>
             <a class="footer__link footer__link--vk" href="#">
-              <svg width="20" height="20">
+              <svg width="22" height="22">
                 <use xlink:href="#vk"></use>
               </svg>
             </a>
@@ -276,7 +282,7 @@
               <span>Юридический адрес</span>
               <span>
                 Республика Татарстан, г. Набережные Челны,
-                ул. Альметьевский тракт, д. 6а
+                ул.&nbsp;Альметьевский тракт, д. 6а
               </span>
             </p>
             <p class="footer__contacts-item">
@@ -340,16 +346,16 @@
                 <a href="#">Доставка и оплата</a>
               </li>
               <li>
-                <a href="#">Обмен и возврат</a>
-              </li>
-              <li>
-                <a href="#">Гарантия</a>
-              </li>
-              <li>
                 <a href="#">Бонусная программа</a>
               </li>
               <li>
-                <a href="#">Таблица размеров</a>
+                <a href="#">Обмен и возврат</a>
+              </li>
+              <li>
+              <a href="#">Таблица размеров</a>
+              </li>
+              <li>
+                <a href="#">Гарантия</a>
               </li>
               <li>
                 <a href="#">Подарочный сертификат</a>
@@ -359,10 +365,10 @@
         </div>
         <div class="footer__other">
           <button class="footer__other-btn" type="button">
-            Связаться с нами
+            Связаться с&nbsp;нами
           </button>
           <a class="footer__other-dev" href="#">
-            <svg width="130" height="30">
+            <svg width="134" height="32">
               <use xlink:href="#imperium"></use>
             </svg>
           </a>
@@ -478,6 +484,10 @@
     <symbol id="arr" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M1.33334 11.3334L6.66668 6.00004L1.33334 0.666706" stroke-linecap="round"
         stroke-linejoin="round" />
+    </symbol>
+    <symbol id="play" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M19.7746 10.8559C20.2706 11.1423 20.2706 11.8583 19.7746 12.1446L1.91741 22.4545C1.42138 22.7409 0.801337 22.3829 0.801337 21.8101L0.801338 1.19045C0.801338 0.617686 1.42138 0.259704 1.91741 0.546088L19.7746 10.8559Z" fill="#F5F5F5"/>
     </symbol>
   </svg>
   <script src="bundle.js"></script>

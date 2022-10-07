@@ -5,7 +5,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 
 const swiper = new Swiper(".slider .swiper", {
-  slidesPerView: 1.9,
+  slidesPerView: 2,
   centeredSlides: true,
   loop: true,
   spaceBetween: 200,

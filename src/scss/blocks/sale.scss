@@ -4,21 +4,21 @@
   &::before {
     position: absolute;
     content: "";
-    top: 100px;
-    right: -50px;
+    top: 110px;
+    right: -58px;
     width: 655px;
     height: 655px;
     background-image: url('/public/img/photo/1-b.png');
     background-repeat: no-repeat;
-    background-position-x: 85%;
+    background-position-x: 92%;
     border-radius: 50%;
   }
 
   &::after {
     position: absolute;
     content: "";
-    top: 60px;
-    right: -88px;
+    top: 69px;
+    right: -98px;
     width: 736px;
     height: 736px;
     border: 1px solid $l-black;
@@ -27,16 +27,16 @@
   
   &__container {
     max-width: 1218px;
-    padding: 117px 0;
+    padding: 120px 0 155px;
     margin: 0 auto;
   }
 
   &__title {
     font-weight: 700;
     font-size: 90px;
-    line-height: 104px;
+    line-height: 102px;
     color: transparent;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
     span {
       -webkit-text-stroke: 1px $m-gray;
@@ -64,7 +64,7 @@
           position: absolute;
           content: "";
           top: 23px;
-          left: 338px;
+          left: 341px;
           width: 45px;
           height: 63px;
           background-image: url("/public/img/svg/lightning.svg");
@@ -79,8 +79,8 @@
         &::before {
           position: absolute;
           content: "";
-          top: 8px;
-          left: -15px;
+          top: 11px;
+          left: -21px;
           width: 100px;
           height: 100px;
           background: radial-gradient(50% 50% at 50% 50%, $orange 0%, rgba(1, 120, 243, 0) 100%);
@@ -90,8 +90,8 @@
         &::after {
           position: absolute;
           content: "";
-          top: 28px;
-          left: 5px;
+          top: 32px;
+          left: 0;
           width: 60px;
           height: 63px;
           background-image: url("/public/img/svg/sale.svg");
@@ -112,20 +112,21 @@
     line-height: 24px;
     color: $m-gray;
     max-width: 490px;
+    margin-bottom: 18px;
   }
 
   &__form {
     display: flex;
     flex-direction: column;
     gap: 55px;
-    max-width: 425px;
+    max-width: 442px;
   }
 
   &__form-input {
     font-feature-settings: 'pnum' on, 'lnum' on;
     background-color: transparent;
     color: $l-gray;
-    padding: 15px 0;
+    padding: 13px 0;
     border-bottom: 1px solid $d-gray;
     transition: 0.3s;
 

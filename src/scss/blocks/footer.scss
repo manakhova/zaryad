@@ -4,24 +4,28 @@
 
   &__container {
     display: flex;
-    gap: 100px;
     max-width: 1218px;
     margin: 0 auto;
     padding-block: 100px;
   }
 
   &__info {
-    max-width: 407px;
+    max-width: 415px;
+    margin-right: 105px;
   }
 
   &__social {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 50px;
   }
 
   &__link {
     &:first-of-type {
-      margin-right: 45px;
+      position: relative;
+      top: 6px;
+      left: -4px;
+      margin-right: 34px;
     }
 
     &:not(:first-of-type) {
@@ -33,7 +37,7 @@
       border: 1px solid $d-gray;
       border-radius: 50%;
       transition: 0.3s;
-      margin: 0 5px;
+      margin: 0 8px;
 
       svg {
         fill: transparent;
@@ -56,12 +60,15 @@
   &__contacts {
     display: flex;
     flex-wrap: wrap;
+    gap: 14px 0;
+    margin-bottom: 70px;
   }
 
   &__contacts-item {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    gap: 5px;
+    width: 45%;
 
     &:first-of-type,
     &:nth-of-type(2) {
@@ -89,6 +96,8 @@
   &__copyright {
     display: flex;
     flex-direction: column; 
+    gap: 8px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
     color: $m-gray; 
 
     a {
@@ -107,12 +116,22 @@
   &__nav {
     display: flex;
     flex-wrap: wrap;
+    align-self: end;
+    gap: 55px 0;
+  }
+
+  &__nav-title {
+    font-size: 18px;
+    margin-bottom: 25px;
   }
 
   &__nav-container {
     width: 50%;
 
     &:nth-of-type(2) {
+      position: relative;
+      left: 5px;
+      
       li:last-of-type {
         width: 120%;
       }
@@ -122,9 +141,7 @@
       width: 100%;
 
       .footer__nav-list {
-        display: flex;
-        flex-wrap: wrap;
-
+        flex-direction: row;
         li {
           width: 50%;
         }
@@ -140,6 +157,13 @@
         transition: 0.3s;
       }
     }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px 0;
   }
 
   &__other {
@@ -170,5 +194,10 @@
     border-color: $d-gray;
     transition: 0.3s;
     }
+  }
+
+  &__other-dev {
+    position: relative;
+    top: 5px;
   }
 }

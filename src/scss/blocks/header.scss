@@ -1,7 +1,7 @@
 .header {
   &__container {
     display: flex;
-    justify-content: space-between;
+    gap: 16px;
     max-width: 1218px;
     margin: 0 auto;
     padding-block: 25px;
@@ -9,13 +9,15 @@
 
   &__language {
     position: relative;
+    padding: 4px 15px;
+    margin-right: 137px;
     border: none;
 
     &::after {
       position: absolute;
       content: "/";
-      top: 5px;
-      left: 50px;
+      top: 4px;
+      left: 46px;
     }
 
     input:checked + label {
@@ -25,7 +27,7 @@
 
   &__language-option {
     cursor: pointer;
-    margin: 0 10px;
+    margin: 0 7px;
     &:hover {
       color: $m-gray;
       transition: 0.3s;
@@ -34,10 +36,12 @@
 
   &__nav {
     display: flex;
+    gap: 24px;
+    margin-right: 84px;
   }
 
   &__item {
-    
+    padding: 4px 0;
   }
 
   &__link {
@@ -58,23 +62,25 @@
   &__actions {
     display: flex;
     align-items: center;
+    gap: 10.5px;
   }
 
   &__button {
     cursor: pointer;
     border: none;
     background-color: inherit;
-    padding: 5px;
+    padding: 0 5px;
 
     &--chart {
       position: relative;
+      left: 14px;
 
       &::after {
         position: absolute;
         content: "";
         width: 50px;
         height: 50px;
-        top: -5px;
+        top: -13px;
         left: -5px;
         border: 1px solid $xl-gray;
         border-radius: 50%;

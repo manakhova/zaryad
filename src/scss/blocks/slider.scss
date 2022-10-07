@@ -1,27 +1,108 @@
 .slider {
-    .swiper {
-      position: relative;
-      z-index: 1;
-    }
+  min-height: 735px;
+  .swiper {
+    position: relative;
+    z-index: 1;
+  }
 
   &__list {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__info {
+    display: none;
+  }
+
+  .swiper-slide-active &__info {
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 51px;
+    right: 104px;
+    max-width: 195px;
+    color: $xl-gray;
+
+    span {
+      &:first-of-type {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+      }
+
+      &:nth-of-type(2) {
+        max-width: 180px;
+        margin-bottom: 22px;
+      }
+    }
+
+    button {
+      cursor: pointer;
       display: flex;
-      align-items: flex-end;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 125px;
+      min-height: 125px;
+      padding: 20px;
+      border-radius: 50%;
+      background-color: transparent;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("/public/img/svg/btn.svg");
+        background-repeat: no-repeat;
+        animation: rotate 14s infinite linear;
+      }
+
+      svg {
+        fill: $xl-gray;
+      }
+    }
   }
   .swiper-slide {
+    display: flex;
+    align-items: flex-end;
+    height: 601px;
     img {
       display: block;
-      width: 990px;
-      height: 100%;
       border-radius: 100px 0 100px 0;
       object-fit: contain;
       transition: 0.3s;
     }
 
+    &-active {
+      width: 992px !important;
+      
+      left: -60px;
+      transition: 0.3s;
+    }
+
     &-next, &-prev {
+      left: -61px;
+      transition: 0.3s;
+
       img {
-        width: 830px;
-        height: 510px;
+        border-radius: 145px 0 145px 0;
+        transition: 0.3s;
+      }
+    }
+
+    &-prev {
+      left: -81px;
+      img {
+        border-radius: 0 145px 0 145px;
         transition: 0.3s;
       }
     }
@@ -30,8 +111,8 @@
   &__button {
     cursor: pointer;
     position: absolute;
-    top: 120px;
-    right: 390px;
+    top: 95px;
+    right: 365px;
     width: 150px;
     min-height: 150px;
     padding: 20px;
@@ -45,5 +126,13 @@
       background-color: $l-gray;
       transition: 0.3s;
     }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  } 100% {
+    transform: rotate(-360deg);  
   }
 }

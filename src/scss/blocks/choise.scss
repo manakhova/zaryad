@@ -7,7 +7,7 @@
     background-image: url("/public/img/svg/line-1.svg");
     background-repeat: repeat-x;
     background-position-y: 50%;
-    bottom: 80px;
+    bottom: 75px;
     left: -5px;
     width: 105%;
     height: 60px;
@@ -23,7 +23,7 @@
     background-repeat: repeat-x;
     background-position-y: 50%;
     background-color: $blue;
-    bottom: 70px;
+    bottom: 44px;
     left: -8px;
     width: 103%;
     height: 60px;
@@ -36,6 +36,9 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     img {
       object-fit: contain;
     }
@@ -48,13 +51,13 @@
 
   &__name {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
   }
 
   &__price {
     font-weight: 700;
     font-size: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   &__actions {
@@ -114,5 +117,35 @@
       content: url('/public/img/svg/arr-orange.svg');
       }
     }
+  }
+}
+
+.line-anim {
+    &::before {
+      animation: lineMove 20s infinite linear;
+    }
+
+    &::after {
+      animation: lineMoveBack 20s infinite linear;
+    }
+}
+
+@keyframes lineMove {
+  0% {
+    background-position-x: 0;
+  } 50% {
+    background-position-x: 100%;
+  } 100% {
+     background-position-x: 0%; 
+  }
+}
+
+@keyframes lineMoveBack {
+  0% {
+    background-position-x: 0;
+  } 50% {
+    background-position-x: -100%;
+  } 100% {
+     background-position-x: 0%; 
   }
 }

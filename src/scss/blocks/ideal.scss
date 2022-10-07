@@ -1,7 +1,10 @@
 .ideal {
-  padding: 150px 190px 0;
-
   position: relative;
+  padding: 103px 290px 0;
+  background-image: url("/public/img/svg/logo-big-d.svg");
+  background-repeat: no-repeat;
+  background-position: center 505px;
+  background-size: 1218px;
   
   &::before,
   &::after {
@@ -28,17 +31,20 @@
     color: $xl-gray;
     text-align: center;
     max-width: 650px;
-    margin: 0 auto 15px;
+    margin: 0 auto 21px;
   }
 
   &__text {
+    font-size: 18px;
     text-align: center;
     color: $l-gray;
+    margin-bottom: 18px;
   }
 
   &__img {
     position: relative;
-    left: 100px;
+    left: 97px;
+    top: 39px;
   }
 
   &__link {
@@ -50,8 +56,8 @@
     font-weight: 600;
     font-size: 16px;
     color: $black;
-    bottom: 220px;
-    right: 390px;
+    bottom: 201px;
+    right: 483px;
     width: 150px;
     min-height: 150px;
     background-color: white;
@@ -59,8 +65,7 @@
     transition: 0.3s;
 
     &:hover {
-      color: $d-gray;
-      border-color: $d-gray;
+      background-color: $l-gray;
       transition: 0.3s;
     }
   }
